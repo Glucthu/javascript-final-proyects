@@ -1,0 +1,20 @@
+.proyect {
+	display: flex;
+	width: 100%;
+}
+
+.proyect img {
+	width: 10vw;
+}
+
+.proyect div {
+	width: 30vw;
+}
+
+.proyect div input {
+	width: 5em;
+}
+
+.proyect div button {
+	width: 6em;
+}

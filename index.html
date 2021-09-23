@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>JavaScript</title>
+	</head>
+	<body>
+		<div class="proyect">
+			<div>
+				<input type="text" name="palindrome" id="palindrome" />
+				<button type="button" onclick="callPalindrome()">Palindrome</button> 
+				<p id="palindrome-out"></p>
+			</div>
+			<img src="./abstract-diamonds.jpg" />
+		</div>
+
+		<div class="proyect">
+			<div>
+				<input type="text" name="caesars" id="caesars" />
+				<button type="button" onclick="callCasears()">Caesars</button> 
+				<p id="caesars-out"></p>
+			</div>
+			<img src="./abstract-diamonds.jpg" />
+		</div>
+
+		<div class="proyect">
+			<div>
+				<input type="number" name="roman" id="roman" min="1" max="3999"/>
+				<button type="button" onclick="callRoman()">Roman</button> 
+				<p id="roman-out"></p>
+			</div>
+			<img src="./abstract-diamonds.jpg" />
+		</div>
+		
+		<div class="proyect">
+			<div>
+				<input type="text" name="telephone" id="telephone" />
+				<button type="button" onclick="callTelephone()">Telephone</button> 
+				<p id="telephone-out"></p>
+			</div>
+			<img src="./abstract-diamonds.jpg" />
+		</div>
+		
+		<div class="proyect">
+			<div>
+				<input type="text" name="cash-register" id="cash-register" />
+				<button type="button" onclick="callCashRegister">Cash register</button>
+				<p id="cash-register-out"></p>
+			</div>
+			<img src="./abstract-diamonds.jpg" />	
+		</div>
+	
+		<script src="./proyects/palindrome-checker.js"></script>
+		<script src="./proyects/caesars-cipher.js"></script>
+		<script src="./proyects/roman-numeral-converter.js"></script>
+		<script src="./proyects/telephone-number-validator.js"></script>
+		<script src="./proyects/cash-register.js"></script>
+	</body>
+</html>
