@@ -1,8 +1,17 @@
+body{ 
+	margin: 0; 
+	background-color: #eee;
+}
+
+#title{
+	text-align: center;
+
+}
+
 .proyect {
 	display: flex;
 	width: 100%;
 	align-items: center;
-	margin-bottom: 20px;
 }
 
 .proyect img { width: 50%; }
@@ -10,28 +19,41 @@
 	width: 50%; 
 	display: grid;
 	grid-template-areas: "input button"
-											 "output output";
+											 "hint output";
 	justify-content: center;
 	align-items: flex-end;
 	grid-gap: 2em;
 }
 
+.proyect div input, button {height: 3em;}
+
 .proyect div input { 
 	width: 8em;
 	border: 0;
 	padding: 1px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid #333;
 	grid-area: input;
 }
 
-.proyect div button { 
+.proyect div button {
 	width: 6em;
-	height: 3em;
 	border: 0;
 	background-color: #39bab5;
 	border-radius: 5px;
 	grid-area: button;
 }
+
+.proyect div button:hover{
+	animation: .2s normal forwards fill-button;
+}
+
+@keyframes fill-button{
+	100%{
+		background-color: #eee;
+	}
+}
+
+.proyect div .hint{ grid-area: hint; }
 
 .proyect div p{ 
 	text-align: center;
@@ -39,16 +61,36 @@
 }
 
 #palindrome-section div { order: 1; }
-#palindrome-section img { order: 2; }
+#palindrome-section img { 
+	order: 2; 
+	filter: hue-rotate(60deg);
+}
 
 #caesars-section div { order: 2; }
-#caesars-section img { order: 1; }
+#caesars-section img { 
+	order: 1; 
+	filter: hue-rotate(120deg);
+}
 
 #roman-section div { order: 1; }
-#roman-section img { order: 2; }
+#roman-section img { 
+	order: 2; 
+	filter: hue-rotate(180deg);
+}
 
 #telephone-section div { order: 2; }
-#telephone-section img { order: 1; }
+#telephone-section img { 
+	order: 1; 
+	filter: hue-rotate(240deg);
+}
 
-#cash-register-section div { order: 1; }
-#cash-register-section img { order: 2; }
+#cash-register-section div { 
+	order: 1;
+	display: flex;
+}
+#cash-register-section img { 
+	order: 2; 
+	filter: hue-rotate(360deg);
+}
+
+

@@ -9,49 +9,57 @@
 		<title>JavaScript</title>
 	</head>
 	<body>
+		<h1 id="title">Java Script Proyects</h1>
+
 		<div class="proyect" id="palindrome-section">
 			<div>
-				<input type="text" name="palindrome" id="palindrome" />
+				<input type="text" name="palindrome" id="palindrome" placeholder="Word" />
 				<button type="button" onclick="callPalindrome()">Palindrome</button> 
+				<p class="hint">Is palindrome:</p>
 				<p id="palindrome-out"></p>
 			</div>
-			<img src="./abstract-diamonds.jpg" />
+			<img src="./abstract.jpg" />
 		</div>
 
 		<div class="proyect" id="caesars-section">
 			<div>
-				<input type="text" name="caesars" id="caesars" />
+				<input type="text" name="caesars" id="caesars" placeholder="Word" />
 				<button type="button" onclick="callCasears()">Caesars</button> 
+				<p class="hint">Encripted:</p>
 				<p id="caesars-out"></p>
 			</div>
-			<img src="./abstract-diamonds.jpg" />
+			<img src="./abstract.jpg" />
 		</div>
 
 		<div class="proyect" id="roman-section">
 			<div>
-				<input type="number" name="roman" id="roman" min="1" max="3999"/>
+				<input type="number" name="roman" id="roman" min="1" max="3999" placeholder="Number" />
 				<button type="button" onclick="callRoman()">Roman</button> 
+				<p class="hint">To roman:</p>
 				<p id="roman-out"></p>
 			</div>
-			<img src="./abstract-diamonds.jpg" />
+			<img src="./abstract.jpg" />
 		</div>
 		
 		<div class="proyect" id="telephone-section">
 			<div>
-				<input type="text" name="telephone" id="telephone" />
+				<input type="text" name="telephone" id="telephone" placeholder="555 555 5555" />
 				<button type="button" onclick="callTelephone()">Telephone</button> 
+				<p class="hint">Is phone number:</p>
 				<p id="telephone-out"></p>
 			</div>
-			<img src="./abstract-diamonds.jpg" />
+			<img src="./abstract.jpg" />
 		</div>
 		
 		<div class="proyect" id="cash-register-section">
 			<div>
-				<input type="text" name="cash-register" id="cash-register" />
-				<button type="button" onclick="callCashRegister">Cash register</button>
+				<input type="number" name="cash-register-price" id="cash-register-price" placeholder="Price" min="0" max="335" />
+				<input type="number" name="cash-register-cash" id="cash-register-cash" placeholder="Cash" min="0" max="335" />
+				<button type="button" onclick="callCashRegister()">Cash register</button>
+				<p class="hint"></p>
 				<p id="cash-register-out"></p>
 			</div>
-			<img src="./abstract-diamonds.jpg" />	
+			<img src="./abstract.jpg" />	
 		</div>
 	
 		<script src="./proyects/palindrome-checker.js"></script>

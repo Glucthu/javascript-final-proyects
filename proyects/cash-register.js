@@ -32,6 +32,28 @@ function checkCashRegister(price, cash, cid) {
 }
 
 function callCashRegister() {
-	if(document.getElementById("").value.length != 0)
-		document.getElementById("cash-register-out").innerHTML = telephoneCheck(document.getElementById("").value)
+	let cashRegisterPrice = document.getElementById("cash-register-price").value;
+	let cashRegisterCash = document.getElementById("cash-register-cash").value;
+
+	if(cashRegisterPrice.length != 0 && 
+		cashRegisterCash.length !=0)
+		if(cashRegisterPrice <= cashRegisterCash)
+			//document.getElementById("cash-register-out").innerHTML = 
+		console.log(checkCashRegister(
+				cashRegisterPrice,
+				cashRegisterCash,
+				[
+					["PENNY", 1.01], 
+					["NICKEL", 2.05], 
+					["DIME", 3.1], 
+					["QUARTER", 4.25], 
+					["ONE", 90], 
+					["FIVE", 55], 
+					["TEN", 20], 
+					["TWENTY", 60], 
+					["ONE HUNDRED", 100]
+				]
+			));
+		else
+			alert("cash must be greater than price")
 }
