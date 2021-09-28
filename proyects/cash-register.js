@@ -38,8 +38,9 @@ function callCashRegister() {
 	if(cashRegisterPrice.length != 0 && 
 		cashRegisterCash.length !=0)
 		if(cashRegisterPrice <= cashRegisterCash)
-			//document.getElementById("cash-register-out").innerHTML = 
-		console.log(checkCashRegister(
+		{	
+			document.getElementById("cash-register-out").innerHTML = " "; 
+			console.log(checkCashRegister(
 				cashRegisterPrice,
 				cashRegisterCash,
 				[
@@ -54,6 +55,6 @@ function callCashRegister() {
 					["ONE HUNDRED", 100]
 				]
 			));
-		else
-			alert("cash must be greater than price")
+		} else
+			document.getElementById("cash-register-out").innerHTML = "cash must be >= price";
 }
