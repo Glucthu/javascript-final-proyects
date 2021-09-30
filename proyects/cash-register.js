@@ -39,8 +39,7 @@ function callCashRegister() {
 		cashRegisterCash.length !=0)
 		if(cashRegisterPrice <= cashRegisterCash)
 		{	
-			document.getElementById("cash-register-out").innerHTML = " "; 
-			console.log(checkCashRegister(
+			out = (checkCashRegister(
 				cashRegisterPrice,
 				cashRegisterCash,
 				[
@@ -55,6 +54,10 @@ function callCashRegister() {
 					["ONE HUNDRED", 100]
 				]
 			));
+			document.getElementById("cash-register-out").innerHTML = "Status: " + out.status + "\n";
+			for (let i in out.change) {
+				document.getElementById("cash-register-out").innerHTML += out.change[i][1] + ": " + out.change[i][0] + "\n";
+			}
 		} else
 			document.getElementById("cash-register-out").innerHTML = "cash must be >= price";
 }
